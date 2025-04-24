@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome!!! You have reached my page🦊</title>
+  <!-- Import Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f0f0f0; /* Light grey background */
+      margin: 0;
+      padding: 20px 0;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    /* Title Styles */
+    h1 {
+      font-family: 'Playfair Display', serif;  /* Special font for title */
+      font-size: 2.5rem;  /* 40px */
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    /* Subtitle/Intro Text */
+    .intro-text {
+      font-size: 1.1rem;  /* 17.6px */
+      text-align: center;
+      margin: 0 auto 30px;
+      max-width: 800px;
+      color: #555;
+    }
+    
+    /* Plot Section Headers */
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;  /* 28.8px */
+      color: #2c3e50;
+      text-align: center;
+      margin-top: 0;
+    }
+    
+    /* Caption Text */
+    .gif-container p {
+      font-size: 0.9rem;  /* 14.4px */
+      color: #666;
+      font-style: italic;
+    }
+    
+    
+    .plot-section {
+      border: 1px solid #e0e0e0; /* Lighter border */
+      border-radius: 8px;
+      padding: 20px;
+      background-color: white; /* White box background */
+      max-width: 850px;
+      margin: 0 auto;
+      width: 90%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+    }
+    
+    .gif-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .caption {
+      text-align: center;
+    }
+
+    .caption p {
+      margin: 0 auto;
+      max-width: 700px;
+      color: #555; /* Darker text for better contrast on white */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome! You have reached my page<span class="emoji">🐧🍎🧠</span></h1>
+    
+    <div class="intro-text">
+      <p>This page contains animated figures for my project <strong>"Quantum Tunnelling Without a Barrier:
+        Phase-Sensitive Signatures in HHG"</strong>. The varied quantity in all figures is the harmonic of the emitted photon <em>q</em>.
+    I tried to make these interactive but I couldn't get it to work, so if anybody knows how to do that in julia pls let me know. </p>
+    </div>
+
+
+      <div class="plot-section">
+        <h2>Two-colour switchover configurations for varying mixing angle</h2>
+        <div class="gif-container">
+          <img src="field_configuration.gif" width="800">
+        </div>
+        <div class="caption">
+          <p>A switchover from <mi>ω</mi> to <mi>2ω</mi>. Tunnelling without a barrier happens at the second ionisation event (green) 
+            when the components have equal amplitude. The total electric field shown here is given by</p>
+          <p style="text-align: center; font-size: 1.1em;">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mi>E</mi>
+              <mo>(</mo>
+              <mi>t</mi>
+              <mo>)</mo>
+              <mo>=</mo>
+              <msub>
+                <mi>E</mi>
+                <mn>1</mn>
+              </msub>
+              <mi>cos</mi>
+              <mo>(</mo>
+              <mi>ω</mi>
+              <mi>t</mi>
+              <mo>)</mo>
+              <mo>+</mo>
+              <msub>
+                <mi>E</mi>
+                <mn>2</mn>
+              </msub>
+              <mi>cos</mi>
+              <mo>(</mo>
+              <mn>2</mn>
+              <mi>ω</mi>
+              <mi>t</mi>
+              <mo>+</mo>
+              <mi>ϕ</mi>
+              <mo>)</mo>
+            </math>
+          </p>
+        </div>
+      </div>
+    
+    <div class="plot-section">
+        <h2>Quantum-path phase coefficients over a scan of total laser intensity for a bichromatic field</h2>
+        <div class="gif-container">
+          <img src="1d_phase_coefficients.gif" width="800">
+        </div>
+        <div class="caption">
+          <p>The branchings, crossings, and cutoffs across here correspond to partial coalescences between 
+            trajectories or to the termination of a trajectory when the harmonic cutoff is reached.</p>
+        </div>
+      </div>
+      
+      <div class="plot-section">
+        <h2>Quantum-path phase coefficient surfaces over<br>an independent field component grid</h2>
+        <div class="gif-container">
+          <img src="2d_phase_coefficients.gif" width="800">
+        </div>
+        <div class="caption">
+          <p>The surface structure indicates regions of strong phase sensitivity. I think it looks like stingrays dancing :)</p>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
