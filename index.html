@@ -29,7 +29,7 @@
     /* Title Styles */
     h1 {
       font-family: 'Playfair Display', serif;  /* Special font for title */
-      font-size: 2.8rem;  /* 40px */
+      font-size: 3rem;  /* 40px */
       color: #2c3e50;
       text-align: center;
       margin-bottom: 10px;
@@ -55,7 +55,7 @@
     
     /* Caption Text */
     .gif-container p {
-      font-size: 1rem;  /* 14.4px */
+      font-size: 1.3rem;  /* 14.4px */
       color: #666;
       font-style: italic;
     }
@@ -94,8 +94,7 @@
     
     <div class="intro-text">
       <p>This page contains animated figures from my project <strong>"Quantum Tunnelling Without a Barrier:
-        Phase-Sensitive Signatures in HHG"</strong>. The varied quantity in the first figure is the mixing angle and in the second and
-        third figures is the harmonic of the emitted photon <em>q</em>. I tried to make these interactive but I couldn't get it to
+        Phase-Sensitive Signatures in HHG"</strong>. I tried to make these interactive but I couldn't get it to
         work, so if anybody knows how to do that in Julia pls let me know. </p>
     </div>
 
@@ -143,26 +142,28 @@
       </div>
     
     <div class="plot-section">
-        <h2>Quantum-path phase coefficients over a scan of total laser intensity for a bichromatic field</h2>
+        <h2>Harmonic variation of &alpha; vs laser intensity</h2>
         <div class="gif-container">
           <img src="1d_phase_coefficients.gif" width="800">
         </div>
         <div class="caption">
-          <p>The branchings, crossings, and cutoffs across here correspond to partial coalescences between 
-            trajectories or to the termination of a trajectory when the harmonic cutoff is reached.</p>
+          <p>Quantum-path phase coefficients over a scan of total laser intensity for a strongly bichromatic field. The varied quantity in the gif is the
+            emitted harmonic. The branchings and cutoffs here correspond to partial coalescences between trajectories or to the termination of a trajectory 
+            when the harmonic cutoff is reached.</p>
         </div>
       </div>
       
       <div class="plot-section">
-        <h2>Quantum-path phase coefficient surfaces over<br>an independent field component grid</h2>
+        <h2>&alpha; surfaces for tunnelling without a barrier</h2>
         <div class="gif-container">
           <img src="2d_phase_coefficients.gif" width="800">
         </div>
         <div class="caption">
-          <p>The surface structure indicates the order of dependence of the phase sensitivity. I think it looks like stingrays dancing :)</p>
+          <p>Quantum-path phase coefficient surfaces over an independent field component grid. Again the animation shows the harmonic variation. The surface
+            structure indicates the order of dependence of the phase sensitivity. I think it looks like dancing stingrays :)</p>
         </div>
       </div>
-      <footer style="font-size: 0.85em; text-align: center; margin-top: 2em;">
+      <footer style="font-size: 0.9em; text-align: center; margin-top: 2em;">
         <p>Calculations performed using the repo <a href="https://github.kcl.ac.uk/Atto-King-s/Tunnelling-without-barrier" target="_blank">github.kcl.ac.uk/Atto-King-s/Tunnelling-without-barrier</a></p>
       </footer>
   </div>
