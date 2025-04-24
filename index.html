@@ -28,11 +28,13 @@
     
     /* Title Styles */
     h1 {
-      font-family: 'Playfair Display', serif;  /* Special font for title */
-      font-size: 3rem;  /* 40px */
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
       color: #2c3e50;
       text-align: center;
-      margin-bottom: 10px;
+      margin: 0 auto 10px;
+      max-width: 90%;
+      line-height: 1.4;
     }
     
     /* Subtitle/Intro Text */
@@ -107,7 +109,7 @@
         <div class="caption">
           <p>A switchover from <mi>ω</mi> to <mi>2ω</mi>. Tunnelling without a barrier happens at the second ionisation event (green) 
             when the components have equal amplitude. The total electric field shown here is given by</p>
-          <p style="text-align: center; font-size: 1.1em;">
+          <p style="text-align: center; font-size: 1.3em;">
             <math xmlns="http://www.w3.org/1998/Math/MathML">
               <mi>E</mi>
               <mo>(</mo>
