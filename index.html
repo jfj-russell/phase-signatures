@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Important for responsive design -->
   <title>Phase Signatures in HHG</title>
   <!-- Import Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  
   <style>
     /* General Styles */
     body {
@@ -24,6 +24,8 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
+      width: 100%;
+      box-sizing: border-box; /* Include padding in width calculation */
     }
     
     /* Title Styles */
@@ -33,23 +35,24 @@
       color: #2c3e50;
       text-align: center;
       margin: 0 auto 10px;
-      max-width: 90%;
+      width: 90%;
       line-height: 1.4;
     }
     
     /* Subtitle/Intro Text */
     .intro-text {
-      font-size: 1.3rem;  /* 17.6px */
+      font-size: clamp(1rem, 3vw, 1.3rem);  /* Responsive font size */
       text-align: center;
       margin: 0 auto 30px;
       max-width: 800px;
+      width: 90%;
       color: #555;
     }
     
     /* Plot Section Headers */
     h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 2rem;  /* 28.8px */
+      font-size: clamp(1.5rem, 4vw, 2rem);  /* Responsive font size */
       color: #2c3e50;
       text-align: center;
       margin-top: 0;
@@ -57,11 +60,10 @@
     
     /* Caption Text */
     .gif-container p {
-      font-size: 1.3rem;  /* 14.4px */
+      font-size: clamp(1rem, 2.5vw, 1.3rem);  /* Responsive font size */
       color: #666;
       font-style: italic;
     }
-    
     
     .plot-section {
       border: 1px solid #e0e0e0; /* Lighter border */
@@ -71,22 +73,49 @@
       max-width: 850px;
       margin: 0 auto;
       width: 90%;
+      box-sizing: border-box; /* Include padding in width calculation */
       box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for depth */
     }
     
     .gif-container {
       text-align: center;
       margin: 20px 0;
+      width: 100%;
+    }
+
+    .gif-container img {
+      max-width: 100%; /* Make GIFs scale with container */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Remove extra space below image */
+      margin: 0 auto; /* Center the image */
     }
 
     .caption {
       text-align: center;
+      width: 100%;
     }
 
     .caption p {
       margin: 0 auto;
       max-width: 700px;
+      width: 90%;
       color: #555; /* Darker text for better contrast on white */
+      font-size: clamp(1rem, 2.5vw, 1.3rem); /* Responsive font size */
+    }
+
+    /* MathML container */
+    .math-container {
+      overflow-x: auto; /* Allow horizontal scrolling if needed */
+      max-width: 100%;
+      margin: 10px auto;
+      text-align: center;
+    }
+
+    /* Footer styles */
+    footer {
+      font-size: clamp(0.8rem, 2vw, 0.9em);
+      text-align: center;
+      margin-top: 2em;
     }
   </style>
 </head>
@@ -104,12 +133,12 @@
       <div class="plot-section">
         <h2>Two-colour switchover configurations</h2>
         <div class="gif-container">
-          <img src="field_configuration.gif" width="800">
+          <img src="field_configuration.gif" alt="Field configuration animation">
         </div>
         <div class="caption">
           <p>A switchover from <mi>ω</mi> to <mi>2ω</mi>. Tunnelling without a barrier happens at the second ionisation event (green) 
             when the components have equal amplitude. The total electric field shown here is given by</p>
-          <p style="text-align: center; font-size: 1.3em;">
+          <div class="math-container">
             <math xmlns="http://www.w3.org/1998/Math/MathML">
               <mi>E</mi>
               <mo>(</mo>
@@ -139,14 +168,14 @@
               <mi>ϕ</mi>
               <mo>)</mo>
             </math>
-          </p>
+          </div>
         </div>
       </div>
     
     <div class="plot-section">
         <h2>Harmonic variation of &alpha; vs laser intensity</h2>
         <div class="gif-container">
-          <img src="1d_phase_coefficients.gif" width="800">
+          <img src="1d_phase_coefficients.gif" alt="1D phase coefficients animation">
         </div>
         <div class="caption">
           <p>Quantum-path phase coefficients over a scan of total laser intensity for a strongly bichromatic field. The varied quantity in the gif is the
@@ -158,14 +187,14 @@
       <div class="plot-section">
         <h2>&alpha; surfaces for tunnelling without a barrier</h2>
         <div class="gif-container">
-          <img src="2d_phase_coefficients.gif" width="800">
+          <img src="2d_phase_coefficients.gif" alt="2D phase coefficients animation">
         </div>
         <div class="caption">
           <p>Quantum-path phase coefficient surfaces over an independent field component grid. Again the animation shows the harmonic variation. The surface
             structure indicates the order of dependence of the phase sensitivity. I think it looks like dancing stingrays :)</p>
         </div>
       </div>
-      <footer style="font-size: 0.9em; text-align: center; margin-top: 2em;">
+      <footer>
         <p>Calculations performed using the repo <a href="https://github.kcl.ac.uk/Atto-King-s/Tunnelling-without-barrier" target="_blank">github.kcl.ac.uk/Atto-King-s/Tunnelling-without-barrier</a></p>
       </footer>
   </div>
