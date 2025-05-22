@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Phase Signatures in HHG</title>
-  
+  <!-- Import Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
 
@@ -28,7 +28,7 @@
       box-sizing: border-box;
     }
     
-
+  
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: clamp(2rem, 5vw, 3rem);
@@ -41,7 +41,7 @@
     
 
     .intro-text {
-      font-size: clamp(1rem, 3vw, 1.3rem);
+      font-size: clamp(1rem, 3vw, 1.3rem);  /* Responsive font size */
       text-align: center;
       margin: 0 auto 30px;
       max-width: 800px;
@@ -52,15 +52,15 @@
 
     h2 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-size: clamp(1.5rem, 4vw, 2rem);  /* Responsive font size */
       color: #2c3e50;
       text-align: center;
       margin-top: 0;
     }
     
-    /* Caption Text */
+
     .gif-container p {
-      font-size: clamp(1rem, 2.5vw, 1.3rem); 
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
       color: #666;
       font-style: italic;
     }
@@ -69,14 +69,14 @@
       border: 1px solid #e0e0e0;
       border-radius: 8px;
       padding: 20px;
-      background-color: white; 
+      background-color: white;
       max-width: 850px;
       margin: 0 auto;
       width: 90%;
       box-sizing: border-box;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
-    
+
     .gif-container {
       text-align: center;
       margin: 20px 0;
@@ -105,7 +105,7 @@
 
 
     .math-container {
-      overflow-x: auto; 
+      overflow-x: auto;
       max-width: 100%;
       margin: 10px auto;
       text-align: center;
@@ -194,6 +194,21 @@
             structure indicates the order of dependence of the phase sensitivity. I think it looks like dancing stingrays :)</p>
         </div>
       </div>
+
+      <div class="plot-section">
+        <h2>My Report</h2>
+        <div class="caption">
+          <p>This is my undergraduate thesis. Read this to learn more about the figures on this page.</p>
+        </div>
+        <div class="gif-container">
+          <iframe src="Report.pdf" width="100%" height="600px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
+        </div>
+        <div class="caption">
+          <p><a href="Report.pdf" target="_blank">Click here to open in a new tab</a></p>
+        </div>
+      </div>
+      
+
       <footer>
         <p>Calculations performed using the repo <a href="https://github.kcl.ac.uk/Atto-King-s/Tunnelling-without-barrier" target="_blank">github.kcl.ac.uk/Atto-King-s/Tunnelling-without-barrier</a></p>
       </footer>
