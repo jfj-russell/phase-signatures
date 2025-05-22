@@ -2,17 +2,17 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Important for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Phase Signatures in HHG</title>
-  <!-- Import Google Font -->
+  
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* General Styles */
+
     body {
       font-family: 'Roboto', sans-serif;
       line-height: 1.8;
       color: #333;
-      background-color: #f0f0f0; /* Light grey background */
+      background-color: #f0f0f0;
       margin: 0;
       padding: 20px 0;
     }
@@ -25,10 +25,10 @@
       margin: 0 auto;
       padding: 20px;
       width: 100%;
-      box-sizing: border-box; /* Include padding in width calculation */
+      box-sizing: border-box;
     }
     
-    /* Title Styles */
+
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: clamp(2rem, 5vw, 3rem);
@@ -39,9 +39,9 @@
       line-height: 1.4;
     }
     
-    /* Subtitle/Intro Text */
+
     .intro-text {
-      font-size: clamp(1rem, 3vw, 1.3rem);  /* Responsive font size */
+      font-size: clamp(1rem, 3vw, 1.3rem);
       text-align: center;
       margin: 0 auto 30px;
       max-width: 800px;
@@ -49,10 +49,10 @@
       color: #555;
     }
     
-    /* Plot Section Headers */
+
     h2 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(1.5rem, 4vw, 2rem);  /* Responsive font size */
+      font-size: clamp(1.5rem, 4vw, 2rem);
       color: #2c3e50;
       text-align: center;
       margin-top: 0;
@@ -60,21 +60,21 @@
     
     /* Caption Text */
     .gif-container p {
-      font-size: clamp(1rem, 2.5vw, 1.3rem);  /* Responsive font size */
+      font-size: clamp(1rem, 2.5vw, 1.3rem); 
       color: #666;
       font-style: italic;
     }
     
     .plot-section {
-      border: 1px solid #e0e0e0; /* Lighter border */
+      border: 1px solid #e0e0e0;
       border-radius: 8px;
       padding: 20px;
-      background-color: white; /* White box background */
+      background-color: white; 
       max-width: 850px;
       margin: 0 auto;
       width: 90%;
-      box-sizing: border-box; /* Include padding in width calculation */
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+      box-sizing: border-box;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
     
     .gif-container {
@@ -84,10 +84,10 @@
     }
 
     .gif-container img {
-      max-width: 100%; /* Make GIFs scale with container */
-      height: auto; /* Maintain aspect ratio */
-      display: block; /* Remove extra space below image */
-      margin: 0 auto; /* Center the image */
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
     }
 
     .caption {
@@ -99,19 +99,19 @@
       margin: 0 auto;
       max-width: 700px;
       width: 90%;
-      color: #555; /* Darker text for better contrast on white */
-      font-size: clamp(1rem, 2.5vw, 1.3rem); /* Responsive font size */
+      color: #555;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
     }
 
-    /* MathML container */
+
     .math-container {
-      overflow-x: auto; /* Allow horizontal scrolling if needed */
+      overflow-x: auto; 
       max-width: 100%;
       margin: 10px auto;
       text-align: center;
     }
 
-    /* Footer styles */
+
     footer {
       font-size: clamp(0.8rem, 2vw, 0.9em);
       text-align: center;
